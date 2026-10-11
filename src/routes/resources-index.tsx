@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 // Labels for pre season titles so copy stays consistent.
 const PRE_SEASON_TITLES = ['New / Interested Student Signup', 'Safety Quiz', 'Student Contract', 'Student Information Form'];
 // Labels for form titles so copy stays consistent.
-const FORM_TITLES = ['Meeting Permission Form', 'Medical Release Form', 'Photograph Release Form'];
+const FORM_TITLES = ['Meeting Permission Form', 'Medical Release Form'];
 
 // Renders the resources page.
 export default async function ResourcesPage() {
