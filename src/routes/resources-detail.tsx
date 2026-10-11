@@ -15,7 +15,7 @@ type StaticResourceSlug = (typeof STATIC_RESOURCE_SLUGS)[number];
 // Labels for pre season titles so copy stays consistent.
 const PRE_SEASON_TITLES = ['New / Interested Student Signup', 'Safety Quiz', 'Student Contract', 'Student Information Form'];
 // Labels for form titles so copy stays consistent.
-const FORM_TITLES = ['Meeting Permission Form', 'Medical Release Form', 'Photograph Release Form'];
+const FORM_TITLES = ['Meeting Permission Form', 'Medical Release Form'];
 
 // True when the slug is one of the built-in resource pages.
 function isStaticResourceSlug(slug: string): slug is StaticResourceSlug {
@@ -182,7 +182,7 @@ async function renderStaticResourcesPage(slug: StaticResourceSlug) {
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-12 lg:px-0">
       <PageHeader
         title="Forms"
-        description="Download the latest PDFs for meetings, medical releases, and photo releases. Signed copies are required within the first two weeks of joining."
+        description="Download the latest PDFs for meeting permission and medical release. Signed copies are required within the first two weeks of joining."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Resources', href: '/resources' },
